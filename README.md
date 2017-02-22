@@ -27,7 +27,7 @@ Front End:
 +	Browse to ```front-end``` folder
 +	Write in the shell ```npm install```
 
-### Run the Application
+## Run the Application
 
 Back End:
 +	Browse to ```back-end``` folder
