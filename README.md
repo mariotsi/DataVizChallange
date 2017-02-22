@@ -8,7 +8,7 @@ It's splitted into Front End and Back End folders.
 Front End is AngularJS + HTML5 + Angular Material
 Back End is Python3, Django and Pandas
 
-### Prerequisites
+## Prerequisites
 
 You simply need  [Python3](https://www.python.org/downloads/) and [VirtualEnvWrapper](https://virtualenvwrapper.readthedocs.io/)
 
