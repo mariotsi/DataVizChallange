@@ -36,6 +36,6 @@ Back End:
 Front End:
 +	Browse to ```front-end``` folder
 +	Write in the shell ```npm start```
-+	Now browse the app at `http://localhost:3000
++	Now browse the app at `http://localhost:3000`
 
 Enjoy!
