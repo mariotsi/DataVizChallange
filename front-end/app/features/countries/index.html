@@ -1,0 +1,36 @@
+<div id="NameSpaceCountries">
+    <md-content>
+        <div class="PaddingContainer" layout="column" layout-padding>
+            <div id="CountriesGraph" class="GraphContainer"></div>
+        </div>
+        <div flex>
+            <div layout="column" layout-padding ng-show="tableData">
+                <table class="DefaultTable WithDetail" ng-cloak>
+                    <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>2014</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in tableData track by row.country">
+                        <td ng-bind="row.country"></td>
+                        <td ng-bind="row[2014] | number : 0"></td>
+                        <td ng-bind="row[2015] | number : 0"></td>
+                        <td ng-bind="row[2016] | number : 0"></td>
+                        <td ng-bind="row[2017] | number : 0"></td>
+                        <td ng-bind="row[2018] | number : 0"></td>
+                        <td ui-sref=".detail({countrySelected:row.country})"><md-icon md-font-set="material-icons"> arrow_forward </md-icon> </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </md-content>
+</div>

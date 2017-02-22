@@ -1,0 +1,72 @@
+<div id="NameSpaceCountries">
+    <md-content>
+        <div layout="column" layout-padding>
+            <h1 class="md-display-1" ng-bind="countrySelected"></h1>
+        </div>
+        <md-tabs md-dynamic-height md-border-bottom md-selected="data.selectedIndex">
+            <md-tab label="View by Tyre Size">
+                <md-content class="md-padding">
+                    <div id="TyreGraph" class="GraphContainer"></div>
+                    <div flex>
+                        <div layout="column" layout-padding ng-show="tableData[0]">
+                            <table class="DefaultTable" ng-cloak>
+                                <thead>
+                                <tr>
+                                    <th>Tyre size</th>
+                                    <th>2014</th>
+                                    <th>2015</th>
+                                    <th>2016</th>
+                                    <th>2017</th>
+                                    <th>2018</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="row in tableData[0] track by row.tyre">
+                                    <td ng-bind="row.tyre"></td>
+                                    <td ng-bind="row[2014] | number : 0"></td>
+                                    <td ng-bind="row[2015] | number : 0"></td>
+                                    <td ng-bind="row[2016] | number : 0"></td>
+                                    <td ng-bind="row[2017] | number : 0"></td>
+                                    <td ng-bind="row[2018] | number : 0"></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </md-content>
+            </md-tab>
+            <md-tab label="View by Car">
+                <md-content class="md-padding">
+                    <div id="CarGraph" class="GraphContainer"></div>
+                    <div flex>
+                        <div layout="column" layout-padding ng-show="tableData[1]">
+                            <table class="DefaultTable" ng-cloak>
+                                <thead>
+                                <tr>
+                                    <th>Car Type</th>
+                                    <th>2014</th>
+                                    <th>2015</th>
+                                    <th>2016</th>
+                                    <th>2017</th>
+                                    <th>2018</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="row in tableData[1] track by row.car">
+                                    <td ng-bind="row.car"></td>
+                                    <td ng-bind="row[2014] | number : 0"></td>
+                                    <td ng-bind="row[2015] | number : 0"></td>
+                                    <td ng-bind="row[2016] | number : 0"></td>
+                                    <td ng-bind="row[2017] | number : 0"></td>
+                                    <td ng-bind="row[2018] | number : 0"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>
