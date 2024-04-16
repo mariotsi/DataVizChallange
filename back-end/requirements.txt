@@ -7,3 +7,4 @@ python-dateutil==2.5.3
 pytz==2016.7
 rest-pandas==0.4.1
 six==1.10.0
+sqlparse>=0.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
